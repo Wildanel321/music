@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Modern Music Player</h1>
+        <div class="file-input-container">
+            <input type="file" id="audioFile" accept="audio/*" class="file-input">
+            <label for="audioFile" class="file-label">Choose Audio File</label>
+        </div>
+        <div class="song-info">
+            <h2 id="songTitle">No song selected</h2>
+            <p id="songDuration">Duration: 00:00</p>
+        </div>
+        <div class="controls">
+            <button id="playPauseBtn" class="control-btn">Play</button>
+            <button id="stopBtn" class="control-btn">Stop</button>
+        </div>
+        <div class="progress-container">
+            <span id="currentTime">00:00</span>
+            <input type="range" id="progressBar" value="0" max="100" class="progress-slider">
+            <span id="totalTime">00:00</span>
+        </div>
+        <div class="volume-container">
+            <span>Volume:</span>
+            <input type="range" id="volumeSlider" value="50" max="100" class="volume-slider">
+        </div>
+        <div class="equalizer-container">
+            <h3>Equalizer</h3>
+            <div class="eq-sliders">
+                <div class="eq-slider">
+                    <label for="lowSlider">Low</label>
+                    <input type="range" id="lowSlider" value="0" min="-20" max="20" class="eq-range">
+                </div>
+                <div class="eq-slider">
+                    <label for="midSlider">Mid</label>
+                    <input type="range" id="midSlider" value="0" min="-20" max="20" class="eq-range">
+                </div>
+                <div class="eq-slider">
+                    <label for="highSlider">High</label>
+                    <input type="range" id="highSlider" value="0" min="-20" max="20" class="eq-range">
+                </div>
+            </div>
+        </div>
+        <canvas id="visualizer" width="800" height="200"></canvas>
+        <div class="theme-container">
+            <button id="changeThemeBtn" class="theme-btn">Change Theme</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
