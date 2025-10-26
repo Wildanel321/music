@@ -2,7 +2,7 @@
 
 A sleek, modern, and responsive music player web application with audio visualization, equalizer controls, and futuristic UI design. Built with HTML, CSS, and JavaScript, featuring Web Audio API for advanced audio processing.
 
-![Music Player Preview](https://via.placeholder.com/800x400/0f0f23/ffffff?text=Modern+Music+Player+Preview)
+![Music Player Preview](images/git.png)
 
 ## Features
 
